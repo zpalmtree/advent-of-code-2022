@@ -30,6 +30,7 @@ mod day22;
 mod day23;
 mod day24;
 mod day25;
+mod tree;
 
 #[allow(dead_code)]
 #[derive(Copy,Clone)]
