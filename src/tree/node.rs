@@ -18,9 +18,4 @@ impl<T> Node<T> {
             children: Vec::new(),
         }
     }
-
-    pub fn add_child(&mut self, index: usize, data: T) {
-        let child = Node::new(index, data, Some(self.index));
-        self.children.push(index);
-    }
 }
