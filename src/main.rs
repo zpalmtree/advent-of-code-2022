@@ -5,6 +5,22 @@ use std::fs::File;
 use std::io::{prelude::*, BufReader, Result};
 use std::collections::HashMap;
 
+#[allow(dead_code)]
+#[derive(Copy,Clone)]
+enum Part {
+    One = 1,
+    Two = 2,
+}
+
+struct Day {
+    part1: fn(Vec<String>) -> String,
+
+    part2: fn(Vec<String>) -> String,
+}
+
+static CURRENT_DAY: u32 = 9;
+static CURRENT_PART: Part = Part::One;
+
 mod day01;
 mod day02;
 mod day03;
@@ -31,22 +47,6 @@ mod day23;
 mod day24;
 mod day25;
 mod tree;
-
-#[allow(dead_code)]
-#[derive(Copy,Clone)]
-enum Part {
-    One = 1,
-    Two = 2,
-}
-
-struct Day {
-    part1: fn(Vec<String>) -> String,
-
-    part2: fn(Vec<String>) -> String,
-}
-
-static CURRENT_DAY: u32 = 8;
-static CURRENT_PART: Part = Part::Two;
 
 fn main() {
     let days = HashMap::from([
