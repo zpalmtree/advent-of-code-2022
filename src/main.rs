@@ -19,7 +19,7 @@ struct Day {
 }
 
 static CURRENT_DAY: u32 = 9;
-static CURRENT_PART: Part = Part::One;
+static CURRENT_PART: Part = Part::Two;
 
 mod day01;
 mod day02;
