@@ -45,8 +45,8 @@ struct Day {
     part2: fn(Vec<String>) -> String,
 }
 
-static CURRENT_DAY: u32 = 7;
-static CURRENT_PART: Part = Part::Two;
+static CURRENT_DAY: u32 = 8;
+static CURRENT_PART: Part = Part::One;
 
 fn main() {
     let days = HashMap::from([
