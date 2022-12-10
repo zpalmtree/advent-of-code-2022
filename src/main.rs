@@ -46,7 +46,7 @@ struct Day {
 }
 
 static CURRENT_DAY: u32 = 7;
-static CURRENT_PART: Part = Part::One;
+static CURRENT_PART: Part = Part::Two;
 
 fn main() {
     let days = HashMap::from([
