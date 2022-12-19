@@ -18,8 +18,8 @@ struct Day {
     part2: fn(Vec<String>) -> String,
 }
 
-static CURRENT_DAY: u32 = 9;
-static CURRENT_PART: Part = Part::Two;
+static CURRENT_DAY: u32 = 11;
+static CURRENT_PART: Part = Part::One;
 
 mod day01;
 mod day02;
